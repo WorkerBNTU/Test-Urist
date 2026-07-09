@@ -11,7 +11,9 @@ CREATE TABLE IF NOT EXISTS clients (
 -- Индекс для сортировки
 CREATE INDEX IF NOT EXISTS clients_created_at_idx ON clients (created_at DESC);
 
--- Row Level Security (открытый доступ для прототипа)
+-- Row Level Security
+-- ⚠️ Прототип: открытый доступ для всех с anon key.
+-- Для продакшена: Supabase Auth + owner_id + политики на auth.uid().
 ALTER TABLE clients ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "Allow public read" ON clients
