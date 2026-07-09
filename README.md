@@ -89,7 +89,7 @@ npm run dev
 4. В **Environment Variables** добавьте все 4 переменные из `.env.example`
 5. Deploy
 
-Vercel автоматически подхватит `api/notify.js` как serverless-функцию.
+Vercel автоматически соберёт Vite-проект и подхватит `api/notify.js` как serverless-функцию. Файл `vercel.json` не нужен.
 
 ---
 
@@ -105,8 +105,7 @@ Vercel автоматически подхватит `api/notify.js` как serv
 │   └── types.ts           # Типы и статусы
 ├── supabase/
 │   └── schema.sql         # SQL-схема
-├── .env.example
-└── vercel.json
+└── .env.example
 ```
 
 ---
