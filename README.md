@@ -85,8 +85,9 @@ npm run dev
 
 1. Загрузите проект на GitHub (или подключите напрямую)
 2. Импортируйте репозиторий на [vercel.com](https://vercel.com)
-3. В **Environment Variables** добавьте все 4 переменные из `.env.example`
-4. Deploy
+3. Framework Preset: **Vite** (определяется автоматически)
+4. В **Environment Variables** добавьте все 4 переменные из `.env.example`
+5. Deploy
 
 Vercel автоматически подхватит `api/notify.js` как serverless-функцию.
 
